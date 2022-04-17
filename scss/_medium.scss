@@ -1,0 +1,85 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+button {display: none;}
+
+
+
+#navWrapper {
+    nav {
+    background-color: $menuColor;
+    }
+    ul {
+        display: flex;
+        margin-left: 2%;
+        border-left: 1px solid rgba(0,0,0,0.1);
+    }
+
+    ul li a {
+        display: block;
+        font-size: 1rem;
+        padding: .9rem 1.2rem;
+        color: rgba(255,255,255,.9);
+        text-decoration: none;
+        transition: background 0.3 linear;
+    }
+
+    ul li a:hover {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    #primaryNav li.parent > a:after {
+        content: "\25BC";
+        font-size: .65rem;
+        color: rgba(255,255,255,.5);
+        float: left;
+    }
+
+    ul li ul {
+        display: flex;
+        flex-direction: column;
+        background-color: darken($menuColor, 5%);
+        border: none;
+        width: 14rem;
+        position: absolute;
+        left: -999rem;
+        z-index: 99;
+    } //end of ul li ul
+
+    ul li ul li {
+        border-right: none;
+        border-top: solid 1px rgba(0,0,0,.2);
+    }
+
+    ul li:hover ul {
+        left: auto;
+        margin-left: 0;
+    }
+} //end of navWrapper
+
+
+//main
+main {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+            div {
+                width: 50%;
+            }
+    
+         div a {
+            display: block;
+            width: 100%;
+            height: 374px;
+            text-decoration: none;
+            padding: 0 2%;
+            transition: all .5s ease-in;
+        }
+    }
+
+} //end of main
+
+
+
+
+
