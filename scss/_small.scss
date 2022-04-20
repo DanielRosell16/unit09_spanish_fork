@@ -40,12 +40,7 @@ header {
 
 /* NAVIGATION STUFF GOES HERE  */
 
-
 #navWrapper {
-    nav {
-        width: 100%;
-    }
-
     background-color: $menuColor;
     ul {
         display: none;
@@ -60,15 +55,10 @@ header {
         padding: .75rem 2vw;
         font-size: 1.1rem;
         color: white;
-        width: 100%;
     }
 
     ul li a:hover {
         background-color: rgba(0,0,0, 0.5);
-    }
-
-    #active {
-        background-color: red;
     }
 
     ul.open {
@@ -81,13 +71,13 @@ header {
 nav button {
     position: relative;
     height: 44px;
-    width: 24px;
+    width: 44px;
     background: none;
     border: none;
         .line {
             position: absolute;
             height: 2px;
-            width: 8%;
+            width: 10%;
             left: 5%;
             background-color: white;
             transition: all .3s ease;
